@@ -1,0 +1,49 @@
+[
+  {
+    "id": "web-app-example",
+    "title": "Web App Example",
+    "tagline": "A short punchy one-liner for the card.",
+    "description": "Longer description shown in the detail modal. Explain what the project does, why you built it, interesting technical challenges, etc.",
+    "tags": ["Angular", "TypeScript"],
+    "status": "live",
+    "splash": {
+      "cover": "splashes/web-app-example/cover.png",
+      "screenshots": [
+        "splashes/web-app-example/screen1.png",
+        "splashes/web-app-example/screen2.png"
+      ]
+    },
+    "links": {
+      "hostedPath": "projects/web-app-example",
+      "repoUrl": "https://github.com/your-username/web-app-example"
+    }
+  },
+  {
+    "id": "desktop-tool",
+    "title": "Desktop Tool",
+    "tagline": "A native desktop utility built with .NET.",
+    "description": "Longer description shown in the detail modal.",
+    "tags": ["C#", ".NET", "WPF"],
+    "status": "live",
+    "splash": {
+      "cover": "splashes/desktop-tool/cover.png",
+      "screenshots": []
+    },
+    "links": {
+      "repoUrl": "https://github.com/your-username/desktop-tool",
+      "downloadUrl": "https://github.com/your-username/desktop-tool/releases/latest/download/tool.zip"
+    }
+  },
+  {
+    "id": "wip-project",
+    "title": "WIP Project",
+    "tagline": "Something cooking in the lab.",
+    "description": "Early stage. Check the repo for latest progress.",
+    "tags": ["Python"],
+    "status": "wip",
+    "splash": null,
+    "links": {
+      "repoUrl": "https://github.com/your-username/wip-project"
+    }
+  }
+]
