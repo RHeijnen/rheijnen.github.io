@@ -18,6 +18,25 @@
       "repoUrl": "https://github.com/your-username/web-app-example"
     }
   },
+    {
+    "id": "Test",
+    "title": "Web App Example",
+    "tagline": "A short punchy one-liner for the card.",
+    "description": "Longer description shown in the detail modal. Explain what the project does, why you built it, interesting technical challenges, etc.",
+    "tags": ["Angular", "TypeScript"],
+    "status": "live",
+    "splash": {
+      "cover": "splashes/web-app-example/cover.png",
+      "screenshots": [
+        "splashes/web-app-example/screen1.png",
+        "splashes/web-app-example/screen2.png"
+      ]
+    },
+    "links": {
+      "hostedPath": "projects/bup",
+      "repoUrl": "https://github.com/your-username/web-app-example"
+    }
+  },
   {
     "id": "desktop-tool",
     "title": "Desktop Tool",
