@@ -3,5 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/projects/vaultlib-demo/",   // relative paths — works on GitHub Pages, Netlify, any subfolder
+  base: "/projects/vaultlib-demo/",
 });
