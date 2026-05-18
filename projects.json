@@ -1,49 +1,213 @@
 [
   {
-    "id": "web-app-example",
-    "title": "Web App Example",
-    "tagline": "A short punchy one-liner for the card.",
-    "description": "Longer description shown in the detail modal. Explain what the project does, why you built it, interesting technical challenges, etc.",
-    "tags": ["Angular", "TypeScript"],
-    "status": "live",
+    "id": "idle-world",
+    "title": "Idle World",
+    "tagline": "WIP idle game",
+    "description": "An incremental idle game where you expand a procedurally-generated world. ",
+    "tags": [
+      "Angular",
+      "TypeScript",
+      "Game"
+    ],
+    "status": "wip",
     "splash": {
-      "cover": "splashes/web-app-example/cover.png",
+      "cover": "splashes/idle-world/cover.png",
+      "screenshots": []
+    },
+    "links": {}
+  },
+  {
+    "id": "toasty",
+    "title": "Toasty!",
+    "tagline": "Measure your accuracy and reaction time",
+    "description": "",
+    "tags": [
+      "Tauri",
+      "Rust",
+      "Typescript"
+    ],
+    "status": "Released",
+    "splash": {
+      "cover": "splashes/toasty/toasty-targets.gif",
       "screenshots": [
-        "splashes/web-app-example/screen1.png",
-        "splashes/web-app-example/screen2.png"
+        "splashes/toasty/toasty-targets.gif",
+        "splashes/toasty/toasty-woopsie.gif"
       ]
     },
     "links": {
-      "hostedPath": "projects/web-app-example",
-      "repoUrl": "https://github.com/your-username/web-app-example"
-    }
+      "repoUrl": "https://github.com/RHeijnen/Toasty",
+      "downloadUrl": "https://github.com/RHeijnen/Toasty"
+    },
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "A target just popped up. Did you click it? No? **It's judging you now**."
+      },
+      {
+        "type": "paragraph",
+        "text": "Toasty is a little desktop gremlin that throws targets onto your screen and dares you to hit them. Spawn one every few seconds for a lazy warm-up, or maybe once per 2 hours ? Keep you on your toes... or every half-second for a full-on aim meltdown. \n\n"
+      },
+      {
+        "type": "paragraph",
+        "text": "Click fast, click accurate. \n"
+      },
+      {
+        "type": "paragraph",
+        "text": "Paint your own scoring zones so the bullseye actually means something, then watch the arcade-style +5 POINTS confetti pop where you land it. \n\nMiss, and it'll tell you. Loudly."
+      },
+      {
+        "type": "image",
+        "src": "splashes/toasty/toasty-ricknroll.gif",
+        "caption": "Oh nooo"
+      },
+      {
+        "type": "paragraph",
+        "text": "Train like you mean it. Reaction time, accuracy, consistency, how far your mouse actually travelled. It's all tracked, charted, and quietly compared against your last run so you can see whether you're genuinely improving or just vibing. There's a Hardcore toggle for the brave: one miss, game over, go again.\n\nOr don't mean it at all. Stuck in a meeting? Bored? Toasty is an excellent way to look busy. It lives in your system tray, minds its own business, and is there whenever the boredom hits.\n\nThe real fun: fail consequences. Every miss can do something. A screen flash. A song. A file that opens. A URL that launches. A curl request that fires off into the void. Which means (and we're absolutely not telling you to do this) if Toasty happened to be running on, say, a friend's computer, a single missed target could open a very specific YouTube video. Repeatedly. Set up the trap, walk away, enjoy. \n\nToasty doesn't ask questions."
+      }
+    ]
   },
   {
-    "id": "desktop-tool",
-    "title": "Desktop Tool",
-    "tagline": "A native desktop utility built with .NET.",
-    "description": "Longer description shown in the detail modal.",
-    "tags": ["C#", ".NET", "WPF"],
-    "status": "live",
+    "id": "corvus",
+    "title": "Corvus",
+    "tagline": "Local Media Management",
+    "description": "Your personal steam with privacy and hotswap support",
+    "tags": [],
+    "status": "Released",
     "splash": {
-      "cover": "splashes/desktop-tool/cover.png",
+      "cover": "splashes/corvus/corvus-splash.png",
+      "screenshots": [
+        "splashes/corvus/corvus-splash.png",
+        "splashes/corvus/cvus-2.png",
+        "splashes/corvus/cvus-1.png"
+      ]
+    },
+    "links": {
+      "repoUrl": "https://github.com/RHeijnen/Corvus",
+      "downloadUrl": "https://github.com/RHeijnen/Corvus",
+      "hostedPath": "projects/corvus"
+    },
+    "changelog": [
+      {
+        "version": "v1.0.1",
+        "date": "2026-05-18",
+        "note": "Added hotswap support"
+      },
+      {
+        "version": "v1.0.0",
+        "date": "2026-05-12",
+        "note": "Initial release, added steam import support"
+      }
+    ]
+  },
+  {
+    "id": "homm2",
+    "title": "Heroes of Node and Magic 2",
+    "tagline": "Server side port of fheroes 2",
+    "description": "Requires assets from the original game",
+    "tags": [
+      "typescript",
+      "node"
+    ],
+    "status": "wip",
+    "splash": {
+      "cover": "splashes/homm2/node-heroes-1.png",
+      "screenshots": []
+    },
+    "links": {}
+  },
+  {
+    "id": "auto-input",
+    "title": "Auto Input",
+    "tagline": "Autoclicker? Auto input more like it.",
+    "description": "Record input and then just replay input as simple as that.\n\nStores records locally and visualizes records so you can match your window to the input",
+    "tags": [
+      "Tauri",
+      "Rust"
+    ],
+    "status": "Released",
+    "splash": {
+      "cover": "splashes/auto-input/cookie.png",
       "screenshots": []
     },
     "links": {
-      "repoUrl": "https://github.com/your-username/desktop-tool",
-      "downloadUrl": "https://github.com/your-username/desktop-tool/releases/latest/download/tool.zip"
+      "repoUrl": "https://github.com/RHeijnen/auto-input"
+    },
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "test"
+      },
+      {
+        "type": "image",
+        "src": "splashes/auto-input/input-timeline.png",
+        "caption": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-clicker",
+    "title": "Auto Clicker",
+    "tagline": "Simple and effiecient auto clicker",
+    "description": "It automatically clicks, has benchmarking built in - keybindings that you can rebind -  what more do you want ?",
+    "tags": [],
+    "status": "Released",
+    "splash": {
+      "cover": "splashes/auto-clicker/auto-clicker.png",
+      "screenshots": []
+    },
+    "links": {
+      "repoUrl": "https://github.com/RHeijnen/auto-clicker"
     }
   },
   {
-    "id": "wip-project",
-    "title": "WIP Project",
-    "tagline": "Something cooking in the lab.",
-    "description": "Early stage. Check the repo for latest progress.",
-    "tags": ["Python"],
-    "status": "wip",
-    "splash": null,
+    "id": "help-out",
+    "title": "Help Out",
+    "tagline": "Help others by helping others",
+    "description": "Be a hero in 5 minutes!",
+    "tags": [],
+    "status": "Unreleased",
+    "splash": {
+      "cover": "splashes/help-out/main.png",
+      "screenshots": []
+    },
     "links": {
-      "repoUrl": "https://github.com/your-username/wip-project"
-    }
+      "hostedPath": "projects/help-out/"
+    },
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Got 5 minutes? Turn your knowledge into impact. Help someone out, earn stars for your expertise, and convert your reputation into real-world donations for causes you care about.\n\nSolve problems. Earn stars. Change the world. Take just a few minutes out of your day to share what you know, build your community rep, and fund great charities.\n\nBe a hero in 5 minutes flat. Lend a hand with a quick question, rack up stars from the community, and turn your reputation into real money for a good cause."
+      }
+    ]
+  },
+  {
+    "id": "cook-out",
+    "title": "Cook Out",
+    "tagline": "Order from your neighbours",
+    "description": "Localized delivery and order system",
+    "tags": [],
+    "status": "wip",
+    "splash": {
+      "cover": "splashes/cook-out/splash.png",
+      "screenshots": [
+        "splashes/cook-out/main.png",
+        "splashes/cook-out/kitchen.png",
+        "splashes/cook-out/products.png"
+      ]
+    },
+    "links": {}
+  },
+  {
+    "id": "disk-management",
+    "title": "Disk Management",
+    "tagline": "",
+    "description": "",
+    "tags": [],
+    "status": "wip",
+    "splash": {
+      "cover": "splashes/disk-management/dashboard.png",
+      "screenshots": []
+    },
+    "links": {}
   }
 ]
