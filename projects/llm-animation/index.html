@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en" data-fluid-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How LLMs Work · Chapter 1: The Origins</title>
+    <meta
+      name="description"
+      content="An animated explainer of how large language models work, told in five chapters: origins, tokens, attention, training, and inference."
+    />
+    <script>
+      // Restore the persisted theme before first paint (fluid-theme-toggle
+      // writes this key). Falls back to the OS preference, defaulting dark.
+      (() => {
+        const saved = localStorage.getItem("fluid-theme");
+        const theme =
+          saved === "light" || saved === "dark"
+            ? saved
+            : matchMedia("(prefers-color-scheme: light)").matches
+              ? "light"
+              : "dark";
+        document.documentElement.setAttribute("data-fluid-theme", theme);
+      })();
+    </script>
+    <script type="module" crossorigin src="/projects/llm-animation/assets/index-DLEMuMNo.js"></script>
+    <link rel="stylesheet" crossorigin href="/projects/llm-animation/assets/index-3JGyIR44.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="wordmark" href="#/1">
+          <span class="wordmark-glyph" aria-hidden="true">▚</span>
+          How LLMs Work
+        </a>
+        <fluid-segmented-control id="path-toggle" aria-label="Explanation path">
+          <fluid-segment value="simple">Simple</fluid-segment>
+          <fluid-segment value="tech">Technical</fluid-segment>
+        </fluid-segmented-control>
+        <nav class="header-nav" id="chapter-nav" aria-label="Chapters"></nav>
+        <fluid-theme-toggle></fluid-theme-toggle>
+      </div>
+    </header>
+
+    <main>
+      <section class="story" id="story" hidden aria-labelledby="story-title">
+        <div class="story-inner">
+          <div class="story-progress" id="story-progress" role="tablist" aria-label="Story steps"></div>
+          <div class="story-stage" id="story-stage"></div>
+          <div class="story-text">
+            <h2 id="story-title"></h2>
+            <p id="story-caption"></p>
+            <div class="story-aside" id="story-aside"></div>
+          </div>
+          <div class="story-controls">
+            <fluid-button id="story-back" variant="secondary" size="lg">← Back</fluid-button>
+            <span class="story-count" id="story-count"></span>
+            <fluid-button id="story-next" variant="primary" size="lg">Next →</fluid-button>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="hero-backdrop" id="hero-backdrop" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="hero-kicker" data-fluid-animation="fade-in" data-fluid-animation-duration="700">
+            An animated field guide
+          </p>
+          <h1 id="hero-title" data-fluid-animation="slide-up" data-fluid-animation-duration="800">
+            How <span class="hero-accent">LLMs</span> work
+          </h1>
+          <p
+            class="hero-sub"
+            data-fluid-animation="slide-up"
+            data-fluid-animation-duration="800"
+            data-fluid-animation-delay="200"
+          >
+            One idea, told in five chapters of animation: a machine that predicts the next word,
+            and everything that idea grew into.
+          </p>
+          <div
+            class="hero-actions"
+            data-fluid-animation="slide-up"
+            data-fluid-animation-duration="800"
+            data-fluid-animation-delay="400"
+          >
+            <fluid-button variant="primary" size="lg" id="start-reading">Start chapter 1</fluid-button>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter" id="chapter" aria-labelledby="chapter-title">
+        <div class="chapter-head">
+          <p class="chapter-eyebrow" id="chapter-eyebrow"></p>
+          <h2 id="chapter-title"></h2>
+          <p class="chapter-intro" id="chapter-intro"></p>
+        </div>
+        <div id="milestones"></div>
+        <div class="chapter-pager" id="chapter-pager"></div>
+      </section>
+
+      <section class="upcoming" aria-labelledby="upcoming-title">
+        <h2 id="upcoming-title">All chapters</h2>
+        <p class="upcoming-sub">The whole story, five animated chapters.</p>
+        <div class="upcoming-grid" id="chapter-map"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Built with the
+        <a href="https://fluid-web.dev" rel="noopener">Fluid design system</a>
+        (<a href="https://github.com/RHeijnen/fluid_ds" rel="noopener">source on GitHub</a>).
+        Animations are plain SVG + Web Animations API, framework-free and reusable.
+      </p>
+    </footer>
+
+  </body>
+</html>

@@ -2,29 +2,185 @@
   {
     "id": "idle-world",
     "title": "Idle World",
-    "tagline": "WIP idle game",
-    "description": "An incremental idle game where you expand a procedurally-generated world. ",
+    "tagline": "An online idle RPG that keeps playing while you get on with your day",
+    "description": "An online MMO idle RPG built in Godot. Pick one of three starting classes and let your character fight, gather and level while you get on with something else. It sits on your desktop, keeps earning while you are away, and everyone shares the same world.",
     "tags": [
-      "Angular",
-      "TypeScript",
-      "Game"
+      "Godot",
+      "GDScript",
+      "Game",
+      "MMO",
+      "Idle RPG"
     ],
     "status": "wip",
     "splash": {
       "cover": "splashes/idle-world/cover.png",
       "screenshots": []
     },
-    "links": {}
+    "links": {},
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "**Where it stands**\n\n- Worlds: 2 of 8 in progress\n- Starting classes: 3 of 3 done\n- Skill system: in progress, 5 so far\n- Boss system: in progress\n- Loot system: roughly done\n- Autoplay: done\n- UI: works, needs an overhaul"
+      }
+    ]
+  },
+  {
+    "id": "fluid-ds",
+    "title": "Fluid",
+    "tagline": "A free, open source component library and design system",
+    "description": "A framework agnostic design system built on web components, so the same elements drop into React, Vue, Angular, Svelte or plain HTML. Themable through CSS custom properties, accessibility tested across the catalog, MIT licensed and free to use. Still pre 1.0 and actively being worked on.",
+    "tags": [
+      "Web Components",
+      "Lit",
+      "TypeScript",
+      "Design System",
+      "Open Source"
+    ],
+    "status": "wip",
+    "splash": null,
+    "links": {
+      "externalUrl": "https://fluid-web.dev/",
+      "repoUrl": "https://github.com/RHeijnen/fluid_ds"
+    },
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Beyond the core components there are separate packages for charts, tables, calendars, kanban boards, maps, editors, icons and more, plus typed React wrappers for anyone who wants them. Every element carries an explicit maturity level, so it is clear what is stable and what may still change."
+      },
+      {
+        "type": "paragraph",
+        "text": "It is the system behind the LLM and music theory explainers on this site."
+      }
+    ]
+  },
+  {
+    "id": "llm-animation-technical",
+    "title": "How LLMs Work: Technical",
+    "tagline": "Five animated chapters: origins, tokens, attention, training, inference",
+    "description": "The technical path of the same explainer. Five chapters of animation covering the road from Shannon and ELIZA to tokenization, embeddings, attention and QKV, gradient descent and RLHF, and finally autoregressive inference, with primary sources cited on every milestone.",
+    "tags": [
+      "TypeScript",
+      "Lit",
+      "SVG",
+      "Explainer"
+    ],
+    "status": "Released",
+    "splash": {
+      "cover": "splashes/llm-animation-technical/cover.png",
+      "screenshots": []
+    },
+    "links": {
+      "hostedPath": "projects/llm-animation/#/1"
+    },
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Chapter 1 traces the origins, from information theory and n-grams through to word2vec. Chapter 2 covers tokenization and embeddings. Chapter 3 takes attention apart: queries, keys and values, attention scores, and why the transformer replaced everything before it. Chapter 4 is training, from the forward pass and gradient descent to scaling laws and RLHF. Chapter 5 is inference: temperature, sampling, and generating one token at a time."
+      },
+      {
+        "type": "paragraph",
+        "text": "Every milestone cites the paper it came from. The animations are framework-free SVG driven by the Web Animations API, built on the Fluid design system, and the technical path shares its shell with the simple one so you can switch between the two at any point."
+      }
+    ]
+  },
+  {
+    "id": "llm-animation-simple",
+    "title": "How LLMs Work: Simple",
+    "tagline": "The no-jargon path through what a language model actually does",
+    "description": "An animated, step-by-step explainer of large language models for people who do not want the maths. The same subject as the technical version, told with everyday analogies instead of architecture diagrams.",
+    "tags": [
+      "TypeScript",
+      "Lit",
+      "SVG",
+      "Explainer"
+    ],
+    "status": "Released",
+    "splash": {
+      "cover": "splashes/llm-animation-simple/cover.png",
+      "screenshots": []
+    },
+    "links": {
+      "hostedPath": "projects/llm-animation/#/simple/1"
+    },
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "A guided story you click through one step at a time. Each step is a single animation that makes one idea land: why a model is really just guessing the next word, what it means to have read an enormous amount of text, and why it sometimes says something confidently wrong."
+      },
+      {
+        "type": "paragraph",
+        "text": "Side-tracks branch off the main line wherever a step raises an obvious question, so you can go a level deeper without losing your place. Animations are plain SVG and the Web Animations API, styled with the Fluid design system."
+      }
+    ]
+  },
+  {
+    "id": "music-theory",
+    "title": "Hear the Theory",
+    "tagline": "Music theory from zero, and you can hear every step",
+    "description": "An animated, listenable infographic that walks music theory from a vibrating string up to jazz harmony. Notes, octaves, intervals, scales, chords, rhythm and the four-chord loop, each step animated and playable out loud.",
+    "tags": [
+      "TypeScript",
+      "Lit",
+      "SVG",
+      "Web Audio",
+      "Explainer"
+    ],
+    "status": "Released",
+    "splash": {
+      "cover": "splashes/music-theory/cover.png",
+      "screenshots": []
+    },
+    "links": {
+      "hostedPath": "projects/music-theory/#/keys"
+    },
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Theory explained in text is theory you cannot check. Every lesson here draws itself on a keyboard or a staff and then plays the thing it just described, so an interval, an inversion or a cadence is something you hear rather than take on trust. Sound is opt-in, and any step can be replayed or looped."
+      },
+      {
+        "type": "paragraph",
+        "text": "It starts at the physical level, why a string at twice the frequency sounds like the same note, and builds from there: half steps and the twelve tones, major and minor scales, modes, diatonic triads and their functions, inversions, extensions, borrowed chords and modulation, then rhythm, meter, grooves and phrasing, ending at lead sheets and jazz harmony. Ear-training sections check whether any of it stuck."
+      }
+    ]
+  },
+  {
+    "id": "homm2",
+    "title": "Heroes of Node and Magic 2",
+    "tagline": "Server side hotseat, straight from the browser",
+    "description": "A server-side take on Heroes of Might and Magic 2 hotseat. The entire game runs on the server and streams to the browser, so everyone shares one session by passing the turn around: nothing to install, and no local copy of the original game or its assets required.",
+    "tags": [
+      "typescript",
+      "node"
+    ],
+    "status": "Unreleasable",
+    "splash": {
+      "cover": "splashes/homm2/node-heroes-1.png",
+      "screenshots": []
+    },
+    "links": {},
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Hotseat is the best way to play Heroes 2 and the worst way to organise an evening: everyone has to be in the same room, at the same machine, with the same install. This rebuilds it as a server-side game. Map, state, turn order and combat all live in Node; the browser is only a view. Open a link, take your turn, hand it over."
+      },
+      {
+        "type": "paragraph",
+        "text": "Because everything is resolved and rendered server side, players need no copy of the original game and no local asset dump at all. That is the interesting part technically, and also the reason it stays a private experiment: the artwork, music and game data it leans on remain someone else's intellectual property, so this is not something that can be released or distributed."
+      }
+    ]
   },
   {
     "id": "toasty",
     "title": "Toasty!",
     "tagline": "Measure your accuracy and reaction time",
-    "description": "",
+    "description": "A desktop aim trainer that throws targets on your screen at whatever pace you pick, then tracks reaction time, accuracy and consistency across runs. Custom scoring zones, a hardcore one-miss-and-out mode, and a configurable consequence for every miss.",
     "tags": [
       "Tauri",
       "Rust",
-      "Typescript"
+      "TypeScript",
+      "React",
+      "Desktop"
     ],
     "status": "Released",
     "splash": {
@@ -36,7 +192,7 @@
     },
     "links": {
       "repoUrl": "https://github.com/RHeijnen/Toasty",
-      "downloadUrl": "https://github.com/RHeijnen/Toasty"
+      "downloadUrl": "downloads/toasty-0.1.0-portable.exe"
     },
     "content": [
       {
@@ -63,6 +219,10 @@
       {
         "type": "paragraph",
         "text": "Train like you mean it. Reaction time, accuracy, consistency, how far your mouse actually travelled. It's all tracked, charted, and quietly compared against your last run so you can see whether you're genuinely improving or just vibing. There's a Hardcore toggle for the brave: one miss, game over, go again.\n\nOr don't mean it at all. Stuck in a meeting? Bored? Toasty is an excellent way to look busy. It lives in your system tray, minds its own business, and is there whenever the boredom hits.\n\nThe real fun: fail consequences. Every miss can do something. A screen flash. A song. A file that opens. A URL that launches. A curl request that fires off into the void. Which means (and we're absolutely not telling you to do this) if Toasty happened to be running on, say, a friend's computer, a single missed target could open a very specific YouTube video. Repeatedly. Set up the trap, walk away, enjoy. \n\nToasty doesn't ask questions."
+      },
+      {
+        "type": "paragraph",
+        "text": "Built as a native Tauri 2 app: a Rust core for the global input hooks and overlay windows, a React front end for the dashboard and the charts. No Electron, no installer ceremony, no telemetry."
       }
     ]
   },
@@ -70,7 +230,7 @@
     "id": "corvus",
     "title": "Corvus",
     "tagline": "Local Media Management",
-    "description": "Your personal steam with privacy and hotswap support",
+    "description": "Your personal steam with privacy and hotswap support. Corvus is a desktop application that organises the games and media already sitting on your drives. What you can open here is a browser demo of the interface, not the real thing: the actual app runs offline on your own machine.",
     "tags": [],
     "status": "Released",
     "splash": {
@@ -86,6 +246,20 @@
       "downloadUrl": "https://github.com/RHeijnen/Corvus",
       "hostedPath": "projects/corvus"
     },
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Corvus is a library for everything you own locally: games, films, music, whatever is spread across your drives. It scans your folders, pulls it all into one place, and gives it the shelf-and-cover-art treatment that storefronts reserve for things you bought from them. It can import your Steam library too, so bought and unbought sit side by side."
+      },
+      {
+        "type": "paragraph",
+        "text": "Hotswap is the reason it exists. Plug in an external drive and its contents appear in the library; unplug it and they quietly step aside instead of leaving you with a wall of broken entries. Nothing is uploaded, nothing phones home, and the whole catalogue stays on your machine."
+      },
+      {
+        "type": "paragraph",
+        "text": "**About the demo above:** the Open button launches a browser demo, a look around the interface and nothing more. Corvus itself is an offline desktop application. It has to be: it reads your local drives, watches them for changes, and launches the things it finds, none of which a web page is allowed to do. Click through the demo to see how it feels, then grab the real build from the repository."
+      }
+    ],
     "changelog": [
       {
         "version": "v1.0.1",
@@ -100,29 +274,16 @@
     ]
   },
   {
-    "id": "homm2",
-    "title": "Heroes of Node and Magic 2",
-    "tagline": "Server side port of fheroes 2",
-    "description": "Requires assets from the original game",
-    "tags": [
-      "typescript",
-      "node"
-    ],
-    "status": "wip",
-    "splash": {
-      "cover": "splashes/homm2/node-heroes-1.png",
-      "screenshots": []
-    },
-    "links": {}
-  },
-  {
     "id": "auto-input",
     "title": "Auto Input",
     "tagline": "Autoclicker? Auto input more like it.",
     "description": "Record input and then just replay input as simple as that.\n\nStores records locally and visualizes records so you can match your window to the input",
     "tags": [
       "Tauri",
-      "Rust"
+      "Rust",
+      "React",
+      "TypeScript",
+      "Desktop"
     ],
     "status": "Released",
     "splash": {
@@ -135,12 +296,24 @@
     "content": [
       {
         "type": "paragraph",
-        "text": "test"
+        "text": "Auto Input records exactly what your keyboard and mouse do, every click, keystroke, scroll and cursor move, and replays it with the original timing. Repeat a fixed number of times or loop forever, and drive the whole thing with global hotkeys so you never have to touch the window mid-run."
+      },
+      {
+        "type": "paragraph",
+        "text": "Recordings go into a local library you can name, reload and delete. Nothing leaves the machine: no account, no cloud sync, no telemetry, and a button that opens the data folder so you can see exactly what is stored."
       },
       {
         "type": "image",
         "src": "splashes/auto-input/input-timeline.png",
-        "caption": ""
+        "caption": "The timeline view: every action on its own track lane, editable down to the individual event."
+      },
+      {
+        "type": "paragraph",
+        "text": "The part that makes it actually usable is the preview overlay. It paints an entire recording onto your screen at once, numbered click positions, mouse-path trails, typed-text bubbles and scroll arrows, so you can line your target window up against the recording before pressing play, instead of discovering afterwards that everything landed forty pixels off."
+      },
+      {
+        "type": "paragraph",
+        "text": "Windows and Linux, built on Tauri 2 with a Rust input core. Headless window mode, always on top, adjustable opacity, light and dark themes."
       }
     ]
   },
@@ -149,7 +322,13 @@
     "title": "Auto Clicker",
     "tagline": "Simple and effiecient auto clicker",
     "description": "It automatically clicks, has benchmarking built in - keybindings that you can rebind -  what more do you want ?",
-    "tags": [],
+    "tags": [
+      "Tauri",
+      "Rust",
+      "React",
+      "TypeScript",
+      "Desktop"
+    ],
     "status": "Released",
     "splash": {
       "cover": "splashes/auto-clicker/auto-clicker.png",
@@ -157,7 +336,17 @@
     },
     "links": {
       "repoUrl": "https://github.com/RHeijnen/auto-clicker"
-    }
+    },
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Set an interval, pick your hotkeys, start clicking. It records click positions so a run can hit several spots in sequence, loops a fixed number of iterations or runs until you stop it, and every hotkey is rebindable."
+      },
+      {
+        "type": "paragraph",
+        "text": "The built-in test area is the honest bit: it counts the clicks actually received against the number that should have fired at your chosen interval and reports the efficiency, so you can see whether the clicker is really keeping up rather than taking its word for it."
+      }
+    ]
   },
   {
     "id": "help-out",
@@ -195,7 +384,9 @@
         "splashes/cook-out/products.png"
       ]
     },
-    "links": {}
+    "links": {
+      "hostedPath": "projects/cook-out/"
+    }
   },
   {
     "id": "disk-management",

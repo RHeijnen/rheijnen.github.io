@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" data-fluid-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hear the Theory · music theory from zero</title>
+    <meta
+      name="description"
+      content="An animated, listenable infographic: music theory from zero. Notes, octaves, scales, chords, rhythm, and the four-chord loop, each step playable out loud."
+    />
+    <script>
+      (() => {
+        const saved = localStorage.getItem("fluid-theme");
+        const theme =
+          saved === "light" || saved === "dark"
+            ? saved
+            : matchMedia("(prefers-color-scheme: light)").matches
+              ? "light"
+              : "dark";
+        document.documentElement.setAttribute("data-fluid-theme", theme);
+      })();
+    </script>
+    <script type="module" crossorigin src="/projects/music-theory/assets/index-O2_dSQP_.js"></script>
+    <link rel="stylesheet" crossorigin href="/projects/music-theory/assets/index-Xj52q2XK.css">
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="sidebar-head">
+          <a class="wordmark" href="#/keys">
+            <span class="wordmark-glyph" aria-hidden="true">▚</span>
+            Hear the Theory
+          </a>
+          <p class="sidebar-sub">music theory from zero</p>
+        </div>
+        <nav class="lesson-nav" id="lesson-nav" aria-label="Lessons"></nav>
+        <div class="sidebar-foot">
+          <fluid-theme-toggle></fluid-theme-toggle>
+          <p class="sidebar-note">
+            Sound is opt-in. Animations are plain SVG + Web Animations, styled with the
+            <a href="https://fluid-web.dev" rel="noopener">Fluid design system</a>
+            (<a href="https://github.com/RHeijnen/fluid_ds" rel="noopener">source on GitHub</a>).
+          </p>
+        </div>
+      </aside>
+
+      <main class="stage-area" aria-labelledby="lesson-title">
+        <div class="stage-host" id="stage-host"></div>
+        <div class="hud">
+          <div class="hud-text">
+            <!-- The scene draws the visible title; this one is for AT and the page outline. -->
+            <h1 id="lesson-title" class="sr-only"></h1>
+            <p id="lesson-caption"></p>
+            <p class="lesson-refs" id="lesson-refs"></p>
+          </div>
+          <div class="hud-controls">
+            <div class="hud-toggles">
+              <fluid-checkbox id="ctl-sound">Sound</fluid-checkbox>
+              <fluid-checkbox id="ctl-loop">Loop</fluid-checkbox>
+              <fluid-button id="ctl-replay" variant="ghost" size="sm">Replay</fluid-button>
+            </div>
+            <div class="hud-nav">
+              <fluid-button id="ctl-back" variant="secondary" size="md">← Back</fluid-button>
+              <span class="lesson-count" id="lesson-count"></span>
+              <fluid-button id="ctl-next" variant="primary" size="md">Next →</fluid-button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+  </body>
+</html>
